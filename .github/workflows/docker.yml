@@ -15,7 +15,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: flanksource/ubuntu20.04
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: ${{ secrets.DOCKER_LOGIN }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           tag_names: true
           snapshot: true
